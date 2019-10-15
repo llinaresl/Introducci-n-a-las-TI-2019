@@ -433,18 +433,6 @@
 							</ul>
 						</li>
 						
-
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>TRANSPORTE</span></a>
-
-							<ul class="nav nav-group-sub" data-submenu-title="TRANSPAIS">
-								
-								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\boletos.html" class="nav-link">SOLICITAR BOLETO</a></li>
-								
-							</ul>
-						</li>
-
-
 						<!-- /page kits -->
 
 					</ul>
