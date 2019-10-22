@@ -401,20 +401,20 @@
 
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">PROCESOS</div> <i class="icon-menu" title="PROCESOS"></i></li>
-						
 
+						<a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\iniciooo.html" class="nav-link"><i class="icon-copy"></i> <span>INICIO</span></a>
 						
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>ALUMNOS</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="ALUMNOS">
 								
-								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\agregar_Alumnos2.html" class="nav-link">AGREGAR</a></li>
+								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\agregar_Alumnos2.php" class="nav-link">AGREGAR</a></li>
 
-								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\editar_alumnos.html" class="nav-link">EDITAR</a>
+								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\editar_alumnos.php" class="nav-link">EDITAR</a>
 								</li>
 								
-								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\lista_alumnos.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\lista_alumnos.php" class="nav-link">LISTADO</a></li>
 
 							</ul>
 						</li>
@@ -424,9 +424,9 @@
 
 							<ul class="nav nav-group-sub" data-submenu-title="MAESTROS">
 								
-								<li class="nav-item"><a href="../../../LTR/material/full/index.html" class="nav-link">AGREGAR</a></li>
-								<li class="nav-item"><a href="../../../LTR/material/full/index.html" class="nav-link">EDITAR</a></li>
-								<li class="nav-item"><a href="../../../LTR/material/full/index.html" class="nav-link">LISTADO</a></li>
+								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\editar_alumnos.php" class="nav-link">AGREGAR</a></li>
+								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\editar_alumnos.php" class="nav-link">EDITAR</a></li>
+								<li class="nav-item"><a href="C:\Users\Compaq\Desktop\Bootstrap 4\Template\layout_1\LTR\default\full\editar_alumnos.php" class="nav-link">LISTADO</a></li>
 								
 							</ul>
 						</li>
@@ -504,141 +504,414 @@
 
 
 			<!-- Content area -->
+
 			<div class="content">
 
-				<!-- Horizontal form options -->
-				<div class="row">
-					<div class="col-md-9">
-								<div class="col-md-9">
-									<fieldset>
-					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i> Formulario Personalizado</legend>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">Escribe tu nombre::</label>
-											<div class="col-lg-9">
-												<div class="row">
-													<div class="col-md-6">
-														<input type="text" placeholder="NOMBRE(S)" class="form-control">
-													</div>
-
-													<div class="col-md-6">
-														<input type="text" placeholder="APELLIDOS" class="form-control">
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">MATRÍCULA:</label>
-											<div class="col-lg-9">
-												<input type="text" placeholder="1930001" class="form-control">
-											</div>
-										</div>
+				<!-- Basic datatable -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Basic datatable</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
 
 
 
-										<div class="form-group row">
-										<label class="col-lg-3 col-form-label">SEXO:</label>
-										<div class="col-lg-9">
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<input type="radio" class="form-input-styled" name="gender" checked data-fouc>
-													MASCULINO
-												</label>
-											</div>
+			<table class="table datatable-basic">
+						<thead>
+							<tr>
+								<th>NOMBRE</th>
+								<th>APELLIDO</th>
+								<th>MATRICULA</th>
+								<th>CURP</th>
+								<th>CORREO</th>
+								<th>NSS</th>
+								<th>TELEFONO</th>
+								<th>CARRERA</th>
+								<th>CUATRIMESTRE</th>
+							
+								<th class="text-center">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Marth</td>
+								<td><a href="#">Enright</a></td>
+								<td>Traffic Court Referee</td>
+								<td>22 Jun 1972</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-											<div class="form-check form-check-inline">
-												<label class="form-check-label">
-													<input type="radio" class="form-input-styled" name="gender" data-fouc>
-													FEMENINO
-												</label>
+											<div class="dropdown-menu dropdown-menu-right">
+												<td><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_scrollable"> Launch <i class="icon-play3 ml-2"></i></button></td>
+
+												
+												<div id="modal_scrollable" class="modal fade" tabindex="-1">
+					<div class="modal-dialog modal-dialog-scrollable">
+						<div class="modal-content">
+							<div class="modal-header pb-3">
+								<h5 class="modal-title">Scrollable modal</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body py-0">
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+								<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+							</div>
+
+							<div class="modal-footer pt-3">
+								<button type="button" class="btn btn-link" data-dismiss="modal">CERRAR</button>
+								<button type="button" class="btn bg-primary">ACTUALIZAR DATOS</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> ELIMINAR</a>
 											</div>
 										</div>
 									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Jackelyn</td>
+								<td>Weible</td>
+								<td><a href="#">Airline Transport Pilot</a></td>
+								<td>3 Oct 1981</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">INGRESA TU CURP:</label>
-											<div class="col-lg-9">
-												<input type="text" placeholder="LILL011026HTSNPNA8" class="form-control">
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
 										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Aura</td>
+								<td>Hard</td>
+								<td>Business Services Sales Representative</td>
+								<td>19 Apr 1969</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">NÚMERO DE SEGURO SOCIAL:</label>
-											<div class="col-lg-9">
-												<input type="text" placeholder="08190183601" class="form-control">
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
 										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Nathalie</td>
+								<td><a href="#">Pretty</a></td>
+								<td>Drywall Stripper</td>
+								<td>13 Dec 1977</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">CORREO:</label>
-											<div class="col-lg-9">
-												<input type="text" placeholder="193000@upv.edu.mx" class="form-control">
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
 										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Sharan</td>
+								<td>Leland</td>
+								<td>Aviation Tactical Readiness Officer</td>
+								<td>30 Dec 1991</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">TELÉFONO:</label>
-											<div class="col-lg-9">
-												<input type="text" placeholder="8341234567" class="form-control">
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
 										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Maxine</td>
+								<td><a href="#">Woldt</a></td>
+								<td><a href="#">Business Services Sales Representative</a></td>
+								<td>17 Oct 1987</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">CARRERA:</label>
-											<div class="col-lg-9">
-												<div class="row">
-													<div class="col-md-9">
-														<div class="mb-3">
-								                            <select data-placeholder="ELIGE TU CARRERA" class="form-control form-control-select2" data-fouc>
-								                            	<option></option>
-								                                <option value="1">Ingeniería en Tecnologías de la Información</option> 
-								                                <option value="2">Ingeniería en Tecnologías de Manufactura</option> 
-								                                <option value="3">Ingeniería Mecatrónica</option> 
-								                                <option value="4">Ingeniería en Sistemas Automotrices</option>
-								                                <option value="5">Licenciatura en Administración y Gestión Empresarial</option>  
-								                            </select>
-							                            </div>
-													</div>
-												</div>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
-										</div>	
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Sylvia</td>
+								<td><a href="#">Mcgaughy</a></td>
+								<td>Hemodialysis Technician</td>
+								<td>11 Nov 1983</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-										<div class="form-group row">
-											<label class="col-lg-3 col-form-label">CUATRIMESTRE:</label>
-											<div class="col-lg-9">
-												<div class="row">
-													<div class="col-md-9">
-														<div class="mb-3">
-								                            <select data-placeholder="ELIGE TU CUATRIMESTRE" class="form-control form-control-select2" data-fouc>
-								                            	<option></option>
-																<option value="1">1ro</option> 
-																<option value="2">2do</option> 
-																<option value="3">3ro</option> 
-																<option value="4">4to</option>
-																<option value="5">5to</option>
-																<option value="5">6to</option>
-																<option value="5">7mo</option>
-																<option value="5">8vo</option>
-																<option value="5">9no</option> 
-								                            </select>
-							                            </div>
-													</div>
-												</div>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
 											</div>
-										</div>	
-												
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Lizzee</td>
+								<td><a href="#">Goodlow</a></td>
+								<td>Technical Services Librarian</td>
+								<td>1 Nov 1961</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-							<div class="text-right">
-								<button type="submit" class="btn btn-primary">ENVIAR DATOS <i class="icon-paperplane ml-2"></i></button>
-							</div>
-						</form>
-					</div>
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Kennedy</td>
+								<td>Haley</td>
+								<td>Senior Marketing Designer</td>
+								<td>18 Dec 1960</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Chantal</td>
+								<td><a href="#">Nailor</a></td>
+								<td>Technical Services Librarian</td>
+								<td>10 Jan 1980</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Delma</td>
+								<td>Bonds</td>
+								<td>Lead Brand Manager</td>
+								<td>21 Dec 1968</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Roland</td>
+								<td>Salmos</td>
+								<td><a href="#">Senior Program Developer</a></td>
+								<td>5 Jun 1986</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Coy</td>
+								<td>Wollard</td>
+								<td>Customer Service Operator</td>
+								<td>12 Oct 1982</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Maxwell</td>
+								<td>Maben</td>
+								<td>Regional Representative</td>
+								<td>25 Feb 1988</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Cicely</td>
+								<td>Sigler</td>
+								<td><a href="#">Senior Research Officer</a></td>
+								<td>15 Mar 1960</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<!-- /2 columns form -->
-
-			</div>
 			<!-- /content area -->
 
 
